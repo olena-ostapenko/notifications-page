@@ -1,0 +1,251 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =================================== */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 100vh;
+    background: rgba(249, 250, 253, 1);
+}
+
+/* =================================== */
+/* FONTS */
+h5 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.unread-button {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(94, 103, 120, 1);
+}
+
+.unread-button:hover {
+    color: rgba(10, 50, 123, 1);
+}
+
+.name {
+    font-weight: 800;
+    font-size: 16px;
+    color: rgba(28, 32, 43, 1)
+}
+
+.name:hover {
+    color: rgba(10, 50, 123, 1);
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(94, 103, 120, 1);
+}
+
+.progress {
+    font-weight: 800;
+    color: rgba(94, 103, 120, 1);
+}
+
+.progress:hover {
+    color: rgba(10, 50, 123, 1);
+}
+
+.club {
+    font-weight: 800;
+    color: rgba(10, 50, 123, 1);
+}
+
+/* =================================== */
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+    max-width: 730px;
+    height: 839px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* =================================== */
+header {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+    margin-bottom: 31px;
+}
+
+.header-notifications {
+    width: 196px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.quantity {
+    width: 32px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: rgba(10, 50, 123, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =================================== */
+/* UNREAD */
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(243, 102, 99, 1);
+    margin-top: 3px;
+    visibility: hidden;
+}
+
+/* =================================== */
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+}
+
+.content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.notification {
+    width: 100%;
+    max-width: 670px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    transition: all 0.25s ease-in-out;
+}
+
+.unread {
+    background-color: rgba(247, 250, 253, 1);
+}
+
+.unread .circle {
+    visibility: visible;
+}
+
+/* =================================== */
+.user-1 {
+    background-image: url(./image/user_icon_1.svg);
+}
+
+.user-2 {
+    background-image: url(./image/user_icon_2.svg);
+}
+
+.user-3 {
+    background-image: url(./image/user_icon_3.svg);
+}
+
+.user-4 {
+    background-image: url(./image/user_icon_4.svg);
+}
+
+.user-5 {
+    background-image: url(./image/user_icon_5.svg);
+}
+
+.user-6 {
+    background-image: url(./image/user_icon_6.svg);
+}
+
+.user-7 {
+    background-image: url(./image/user_icon_7.svg);
+}
+
+/* =================================== */
+
+.photo {
+    min-width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+}
+
+.info>* {
+    display: inline-block;
+}
+
+.text {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.message {
+    max-width: 566px;
+    border: 1px solid rgba(221, 231, 238, 1);
+    border-radius: 5px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 17px;
+
+}
+
+.message:hover {
+    background-color: rgba(229, 239, 250, 1);
+    border: 1px solid rgba(229, 239, 250, 1);
+    cursor: pointer;
+}
+
+.coment-photo {
+    width: 45px;
+    height: 45px;
+    background-image: url(./image/coment-photo_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
