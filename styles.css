@@ -243,9 +243,78 @@ header {
 }
 
 .coment-photo {
-    width: 45px;
+    min-width: 45px;
     height: 45px;
     background-image: url(./image/coment-photo_icon.svg);
     background-repeat: no-repeat;
-    background-position: 0 0;
+
+}
+@media(max-width: 375px){
+    /* =================================== */
+/* FONTS */
+h5{
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+}
+.name{
+    font-size: 14px;
+}
+.progress {
+    font-size: 14px;
+}
+.club{
+    font-size: 14px;
+}
+ /* =================================== */
+.section{
+    width: 100%;
+    height: 100%;
+    /* max-width: 730px;
+    height: ; */
+
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+header{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.header-notifications{
+    width: 168px;
+}
+.conteiner{
+    gap: 13px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.content{
+    gap:10px
+}
+.notification{
+    max-width: 343px;
+    padding: 0 16px;
+}
+ /* =================================== */
+
+.photo{
+    min-width: 39px;
+    height: 39px;
+}
+.info>*:not(div) {
+    display: initial;
+ 
+}
+.coment-photo {
+    min-width: 39px;
+    height: 39px;
+    background-image: url(./image/coment-photo_icon_adaptive.svg);
+    background-repeat: no-repeat;
+ margin-bottom: 18px;
+}
+
+
+
 }
